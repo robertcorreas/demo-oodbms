@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="OODBMS.ListarEmpregados"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OODBMS"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+         <Grid.ColumnDefinitions>
+             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        
+        <GroupBox Grid.Column="0" Header="Empregados">
+            <ListBox x:Name="Empregados" SelectionChanged="Selector_OnSelectionChanged" DisplayMemberPath="Nome"/>
+        </GroupBox>
+        
+        <GroupBox Grid.Column="1" Header="Info">
+            <GroupBox.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="Margin" Value="4"/>
+                </Style>
+
+                <Style TargetType="TextBlock">
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                    <Setter Property="Margin" Value="4"/>
+                </Style>
+            </GroupBox.Resources>
+            
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Nome" />
+                    <TextBlock x:Name="InfoNome" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Idade" />
+                    <TextBlock x:Name="InfoIdade" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Matrícula" />
+                    <TextBlock x:Name="InfoMatricula" />
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</UserControl>
