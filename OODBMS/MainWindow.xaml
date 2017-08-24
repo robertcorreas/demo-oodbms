@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="550" Width="825">
     <StackPanel>
-       <Button Content="Cadastro de empregados" Click="ButtonBase_OnClick"/>
+        <Button Content="Cadastrar de empregados" Click="CadastrarEmpregados_OnClick"/>
         <Button Content="Filtrar pro idade" Click="FiltrarIdade_Click"/>
         <Button Content="Carregar todos os empregados" Click="CarregarEmpregados_Click"/>
         <local:ListarEmpregados x:Name="ListaEmpregadosView" Height="500"></local:ListarEmpregados>

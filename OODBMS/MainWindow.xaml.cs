@@ -12,7 +12,7 @@ namespace OODBMS
             InitializeComponent();
         }
 
-        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        private void CadastrarEmpregados_OnClick(object sender, RoutedEventArgs e)
         {
             var window = new CadastroEmpregados();
             window.ShowDialog();
