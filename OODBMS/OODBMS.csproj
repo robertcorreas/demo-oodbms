@@ -58,15 +58,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="CadastroEmpregados.xaml">
+    <Page Include="Views\CadastroEmpregados.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="FiltrarPorIdade.xaml">
+    <Page Include="Views\FiltrarPorIdade.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ListarEmpregados.xaml">
+    <Page Include="Views\ListarEmpregados.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -78,14 +78,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="CadastroEmpregados.xaml.cs">
+    <Compile Include="Views\CadastroEmpregados.xaml.cs">
       <DependentUpon>CadastroEmpregados.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Empregado.cs" />
-    <Compile Include="FiltrarPorIdade.xaml.cs">
+    <Compile Include="Models\Empregado.cs" />
+    <Compile Include="Views\FiltrarPorIdade.xaml.cs">
       <DependentUpon>FiltrarPorIdade.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ListarEmpregados.xaml.cs">
+    <Compile Include="Views\ListarEmpregados.xaml.cs">
       <DependentUpon>ListarEmpregados.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
@@ -94,7 +94,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pessoa.cs" />
+    <Compile Include="Models\Pessoa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -121,5 +121,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

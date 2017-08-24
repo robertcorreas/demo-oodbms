@@ -14,7 +14,7 @@ namespace OODBMS
 
         private void CadastrarEmpregados_OnClick(object sender, RoutedEventArgs e)
         {
-            var window = new CadastroEmpregados();
+            var window = new Views.CadastroEmpregados();
             window.ShowDialog();
 
             ListaEmpregadosView.CarregarEmpregados();
@@ -22,7 +22,7 @@ namespace OODBMS
 
         private void FiltrarIdade_Click(object sender, RoutedEventArgs e)
         {
-            var window = new FiltrarPorIdade();
+            var window = new Views.FiltrarPorIdade();
             window.ShowDialog();
 
             ListaEmpregadosView.FiltrarPorIdade(window.IdadeEscolhida, window.FiltroEscolhido);

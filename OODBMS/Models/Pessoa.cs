@@ -1,6 +1,6 @@
 ﻿using VelocityDb;
 
-namespace OODBMS
+namespace OODBMS.Models
 {
     public abstract class Pessoa : OptimizedPersistable
     {

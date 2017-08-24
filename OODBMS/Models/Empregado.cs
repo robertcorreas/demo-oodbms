@@ -1,4 +1,4 @@
-﻿namespace OODBMS
+﻿namespace OODBMS.Models
 {
     public class Empregado : Pessoa
     {

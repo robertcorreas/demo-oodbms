@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace OODBMS
+namespace OODBMS.Views
 {
     /// <summary>
     ///     Interaction logic for FiltrarPorIdade.xaml

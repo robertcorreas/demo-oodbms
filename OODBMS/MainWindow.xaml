@@ -4,12 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OODBMS"
+        xmlns:views="clr-namespace:OODBMS.Views"
         mc:Ignorable="d"
         Title="MainWindow" Height="550" Width="825">
     <StackPanel>
         <Button Content="Cadastrar de empregados" Click="CadastrarEmpregados_OnClick"/>
         <Button Content="Filtrar pro idade" Click="FiltrarIdade_Click"/>
         <Button Content="Carregar todos os empregados" Click="CarregarEmpregados_Click"/>
-        <local:ListarEmpregados x:Name="ListaEmpregadosView" Height="500"></local:ListarEmpregados>
+        <views:ListarEmpregados x:Name="ListaEmpregadosView" Height="500"></views:ListarEmpregados>
     </StackPanel>
 </Window>
